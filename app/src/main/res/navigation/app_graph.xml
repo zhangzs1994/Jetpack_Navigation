@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nva_graph"
+    app:startDestination="@id/blankFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.zzs.jetpack_navigation.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/blankFragment2"
+            app:enterAnim="@anim/anim_in_enter"
+            app:exitAnim="@anim/anim_in_exit"
+            app:popEnterAnim="@anim/anim_out_enter"
+            app:popExitAnim="@anim/anim_out_exit" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="张三" />
+        <argument
+            android:name="sex"
+            app:argType="string"
+            android:defaultValue="男" />
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="20" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.zzs.jetpack_navigation.BlankFragment2"
+        android:label="fragment_blank_fragment2"
+        tools:layout="@layout/fragment_blank2" >
+    </fragment>
+</navigation>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jetpack_Navigation</string>
+
+    <string name="jump_to_blank2">跳转到页面2</string>
+    <string name="back_to_blank">返回到页面1</string>
+    <string name="send_args">传递的参数：</string>
+    <string name="page2">页面2</string>
+    <string name="page1">页面1</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
